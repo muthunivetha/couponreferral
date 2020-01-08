@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>user details</title>
+</head>
+<body>
+	{% block body_block %}
+  <div class="container">
+    <div class="jumbotron">
+    	<h1>details:</h1>
+
+    	
+      {% for i in userdetails %}
+      	<li>name: {{ i.username }}</li>
+      	<li>email: {{ i.email }}</li>
+      	<li>age: {{ i.age }}</li>
+      	<li>city: {{ i.city }}</li>
+      	<li>referral code: {{ i.referral_code }}</li>
+      	
+
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}
+
+</body>
+</html>
